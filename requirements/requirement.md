@@ -14,6 +14,13 @@
 |USDM|Universal Specification Describing Mannerの略で、要求を階層的に整理し仕様化するための方法論|
 |インタラクション|相互作用|
 
+# 要求
+
+テレプレゼンスロボットシステムに関わる要求を以下に示す
+<!-- TODO 図を分けて書く -->
+
+![](.images/req01.png)
+
 
 # システムの構成
 
