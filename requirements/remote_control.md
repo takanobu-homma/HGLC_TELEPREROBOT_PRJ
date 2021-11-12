@@ -33,7 +33,7 @@
 ![](.images/activity/remote_control.png)
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
-※頭部に対してはavatarin側で分析が行われるため、本書では対象外とする。
+※頭部に対してはavatarin側の責務のため、本書では対象外とする。
 
 <div style="page-break-before:always"></div>
 
