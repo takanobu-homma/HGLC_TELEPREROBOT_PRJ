@@ -47,7 +47,7 @@
 
 <div style="page-break-before:always"></div>
 
-## 胴体部は起動処理の失敗（アバタークラウドへの接続失敗も含む）を本体に表示する
+## 胴体部は起動処理の結果を本体に表示する
 
 ![](.images/activity/power_on/act01.png)
 
