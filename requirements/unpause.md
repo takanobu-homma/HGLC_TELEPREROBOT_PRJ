@@ -77,6 +77,7 @@
 |:---|:---|
 |Miimo Main ECUは現在の状態とスイッチ操作イベントから一時停止解除操作か判定する|※1|
 |Miimo Main ECUは一時停止解除操作受信を通知する||
+
 ※1:「電源停止スイッチタイミングチャート」資料により、スイッチ押下を電源ON/電源OFF/一時停止/一時停止解除のどの操作と解釈するかはMiimo Main ECUの責務とする。
 
 <div style="page-break-before:always"></div>
@@ -99,7 +100,7 @@
 
 <div style="page-break-before:always"></div>
 
-## 一定時間待機後に一時停止状態を解除し、外部指示を有効にする
+## 走行部は一定時間待機後に一時停止状態を解除し、外部指示を有効にする
 
 ![](.images/activity/unpause/act03.png)
 
