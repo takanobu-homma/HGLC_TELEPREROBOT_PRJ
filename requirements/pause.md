@@ -66,7 +66,7 @@
 
 <div style="page-break-before:always"></div>
 
-##走行部は一時停止信号を受信したら直ちに一時停止する
+## 走行部は一時停止信号を受信したら直ちに一時停止する
 
 ![](.images/activity/pause/act01.png)
 
