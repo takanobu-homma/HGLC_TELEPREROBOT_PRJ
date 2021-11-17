@@ -37,6 +37,16 @@
 
 <div style="page-break-before:always"></div>
 
+## 頭部は一時停止状態が解除されることをアバタークラウドに送信する
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は走行部に走行停止（速度0）コマンドを送る
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
 ## 胴体部は一時停止中に一時停止解除操作されたら走行部に一時停止解除を伝達する
 
 ![](.images/activity/unpause/body-act01.png)

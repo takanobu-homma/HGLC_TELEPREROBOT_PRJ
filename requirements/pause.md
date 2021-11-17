@@ -52,6 +52,11 @@
 
 <div style="page-break-before:always"></div>
 
+## 頭部は一時停止状態をアバタークラウドに送信する
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
 ## 胴体部は一時停止状態であることを表示する
 
 ![](.images/activity/pause/body-act02.png)
