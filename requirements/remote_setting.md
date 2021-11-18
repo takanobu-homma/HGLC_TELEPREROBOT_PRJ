@@ -27,7 +27,6 @@
 
 # L2要求分析
 
-
 「遠隔で設定する」での設定コマンド概要を以下に示す。
 走行部に対する設定としてベース設定コマンドがある。
 
@@ -52,7 +51,10 @@
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUは||
+|Miimo Main ECUは受信したエリア検出設定の設定可否を判断し、avatarcoreに結果を送信する|エリア検出設定はavatarcoreのarea_settingを利用する想定|
+|Miimo Main ECUは設定可能と判断した場合、エリア検出設定を保存する||
+|Miimo Main ECUは最高速度設定の設定可否を判断し、avatarcoreに結果を送信する|最高速度設定はavatarcoreのspeed_dataを利用する設定|
+|Miimo Main ECUは設定可能と判断した場合、最高速度設定を保存する||
 
 <div style="page-break-before:always"></div>
 
@@ -65,6 +67,6 @@
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUは||
+|―――|　「ベース設定コマンドで指定された設定をする」内で実施|
 
 <div style="page-break-before:always"></div>
