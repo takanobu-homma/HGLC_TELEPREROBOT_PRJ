@@ -26,6 +26,7 @@
 <div style="page-break-before:always"></div>
 
 # L2要求分析
+
 「接続設定を行う」のアクティビティ図を以下に示す。
 
 
@@ -38,10 +39,12 @@
 <div style="page-break-before:always"></div>
 
 ## 頭部はアバタークラウドへの接続設定を行う
+
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
 ## 頭部はアバタークラウドとの疎通確認を行う
+
 avatarin側の責務のため、対象外とする。
 
