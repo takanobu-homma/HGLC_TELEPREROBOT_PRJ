@@ -26,6 +26,7 @@
 <div style="page-break-before:always"></div>
 
 # L2要求分析
+
 「一時停止を解除する」のアクティビティ図を以下に示す。
 
 
@@ -34,6 +35,18 @@
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は一時停止状態が解除されることをアバタークラウドに送信する
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は走行部に走行停止（速度0）コマンドを送る
+
+avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 

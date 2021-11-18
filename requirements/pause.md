@@ -26,6 +26,7 @@
 <div style="page-break-before:always"></div>
 
 # L2要求分析
+
 「一時停止する」のアクティビティ図を以下に示す。
 
 
@@ -49,6 +50,12 @@
 |電源停止スイッチはMiimo Main ECUに電源停止スイッチ押下を伝達する|※1|
 
 ※1:「電源停止スイッチタイミングチャート」資料により、電源停止スイッチは押下を検出するのみとする（スイッチ押下を電源ON/電源OFF/一時停止/一時停止解除のどの操作と解釈するかはMiimo Main ECUの責務）。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は一時停止状態をアバタークラウドに送信する
+
+avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
