@@ -26,6 +26,7 @@
 <div style="page-break-before:always"></div>
 
 # L2要求分析
+
 「遠隔で操作する」のアクティビティ図を以下に示す。
 
 
@@ -38,36 +39,43 @@
 <div style="page-break-before:always"></div>
 
 ## 頭部は外部指示が有効であることを確認する
+
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
 ## 頭部は操作コマンドにより送信先を選択する
+
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
 ## 頭部は外部指示が無効の場合はベース操作コマンドを破棄する
+
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
 ## 頭部は有効と判断したベース操作コマンドを走行部に送信する
+
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
 ## 頭部は首操作コマンドを実行できる状態であることを確認する
+
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
 ## 頭部は首操作コマンドを実行できる状態でなければ、首操作コマンドを破棄する
+
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
 ## 頭部は首操作コマンドを首操作指示に変換する
+
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>

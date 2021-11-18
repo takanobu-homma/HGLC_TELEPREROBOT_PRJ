@@ -26,6 +26,7 @@
 <div style="page-break-before:always"></div>
 
 # L2要求分析
+
 「一時停止する」のアクティビティ図を以下に示す。
 
 
@@ -53,6 +54,7 @@
 <div style="page-break-before:always"></div>
 
 ## 頭部は一時停止状態をアバタークラウドに送信する
+
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
