@@ -26,6 +26,7 @@
 <div style="page-break-before:always"></div>
 
 # L2要求分析
+
 「遠隔で会話する」のアクティビティ図を以下に示す。
 
 
@@ -38,14 +39,17 @@
 <div style="page-break-before:always"></div>
 
 ## 頭部は映像・音声デバイスを初期化する
+
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
 ## 頭部は受信したデータを変換し出力する
+
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
 ## 頭部は入力された映像・音声をデータに変換し送信する
+
 avatarin側の責務のため、対象外とする。
