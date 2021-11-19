@@ -26,12 +26,49 @@
 <div style="page-break-before:always"></div>
 
 # L2要求分析
+
 「起動する」のアクティビティ図を以下に示す。
 
 ![](.images/activity/power_on.png)
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は走行部からの電源供給により起動し、起動処理を開始する
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は自己診断を行う
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部はアバタークラウドに接続する
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は自己診断で異常があった場合、走行部に通知する
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は起動処理の結果をアバタークラウドに通知する
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は起動処理の結果を表示する
+
+avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
@@ -47,7 +84,7 @@
 
 <div style="page-break-before:always"></div>
 
-## 胴体部は起動処理の結果を本体に表示する
+## 胴体部は起動処理の結果を走行部から受け表示する
 
 ![](.images/activity/power_on/act01.png)
 
@@ -112,19 +149,6 @@
 
 <div style="page-break-before:always"></div>
 
-## 走行部は起動処理の完了を頭部に通知する
-
-![](.images/activity/power_on/act03.png)
-
-
-**L2要求抽出**
-
-|要求|備考|
-|:---|:---|
-|||
-
-<div style="page-break-before:always"></div>
-
 ## 走行部は自己診断で異常があった場合、診断結果を保存する
 
 ![](.images/activity/power_on/act03.png)
@@ -138,7 +162,7 @@
 
 <div style="page-break-before:always"></div>
 
-## 走行部は自己診断で異常があった場合および頭部の起動処理に失敗したことを通知された場合、起動処理を失敗とする
+## 走行部は起動処理の結果を頭部に通知する
 
 ![](.images/activity/power_on/act03.png)
 
@@ -151,7 +175,7 @@
 
 <div style="page-break-before:always"></div>
 
-## 走行部は起動処理の失敗を頭部に通知する
+## 走行部は起動処理の結果を胴体部に通知する
 
 ![](.images/activity/power_on/act03.png)
 
