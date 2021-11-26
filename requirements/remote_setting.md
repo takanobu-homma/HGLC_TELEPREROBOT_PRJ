@@ -1,3 +1,13 @@
+---
+title: テレプレゼンスロボット要求分析
+subtitle: 「遠隔で設定する」の要求詳細化
+author: 株式会社 豆蔵
+date: 2021年11月26日
+---
+<!-- ↑表紙ページのための情報 -->
+
+<div style="page-break-before:always"></div>
+
 # はじめに
 
 ## 本書の目的
@@ -43,7 +53,37 @@
 
 <div style="page-break-before:always"></div>
 
-## 走行部はベース設定コマンドで指定された設定をする
+## 頭部は頭部設定コマンドを頭部に、ベース設定コマンドに走行部に送信する
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部はベース設定コマンド受付可否を走行部に問い合わせる
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部はベース設定コマンド受付可の場合、ベース設定コマンドに走行部に送信する
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は頭部設定コマンドで指定された設定をする
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は設定に失敗した場合、その結果をアバタークラウドに返す
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 走行部はベース設定コマンドを受付可能か回答する
 
 ![](.images/activity/remote_setting/act01.png)
 
@@ -51,22 +91,37 @@
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUは受信したエリア検出設定の設定可否を判断し、avatarcoreに結果を送信する|エリア検出設定はavatarcoreのarea_settingを利用する想定|
-|Miimo Main ECUは設定可能と判断した場合、エリア検出設定を反映する||
-|Miimo Main ECUは最高速度設定の設定可否を判断し、avatarcoreに結果を送信する|最高速度設定はavatarcoreのspeed_dataを利用する設定|
-|Miimo Main ECUは設定可能と判断した場合、最高速度設定を反映する||
+|Miimo Main ECUはベース設定コマンドの受付可否を判定する|ベース設定コマンドは、走行中（速度≠0）の時は受け付けない想定|
+
+
+
+
+<div style="page-break-before:always"></div>
+
+## 走行部はベース設定コマンドで指定された設定をする
+
+![](.images/activity/remote_setting/act02.png)
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|Miimo Main ECUは受信したエリア検出設定を反映し、avatarcoreに結果を送信する|・エリア検出設定はavatarcoreのarea_settingを利用する想定<br/>※1|
+|Miimo Main ECUは受信した最高速度設定を反映し、avatarcoreに結果を送信する|最高速度設定はavatarcoreのspeed_dataを利用する設定<br/>※1|
+
+※1:頭部側で受付可否をチェックする想定ではあるが、設定失敗のケースを考慮
 
 <div style="page-break-before:always"></div>
 
 ## 走行部は設定に失敗した場合、その結果を頭部に通知する
 
-![](.images/activity/remote_setting/act02.png)
+![](.images/activity/remote_setting/act03.png)
 
 
 **L2要求抽出**
 
 |要求|備考|
 |:---|:---|
-|―――|　「ベース設定コマンドで指定された設定をする」内で実施|
+|→L2要求としては「ベース設定コマンドで指定された設定をする」内で実施||
 
 <div style="page-break-before:always"></div>
