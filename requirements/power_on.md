@@ -154,7 +154,7 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUは自己診断を行う||
+|Miimo Main ECUは内部の診断を行う||
 |Miimo Main ECUはエリアセンサの診断を行う|※1|
 |Miimo Main ECUは左走行モータの診断を行う|※1|
 |Miimo Main ECUは右走行モータの診断を行う|※1|
