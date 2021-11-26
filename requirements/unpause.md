@@ -1,3 +1,14 @@
+---
+title: テレプレゼンスロボット要求分析
+subtitle: 「一時停止を解除する」の要求詳細化
+author: 株式会社 豆蔵
+date: 2021年11月25日
+---
+
+<!-- 表紙ページのための改ページ -->
+<div style="page-break-before:always"></div>
+
+
 # はじめに
 
 ## 本書の目的
