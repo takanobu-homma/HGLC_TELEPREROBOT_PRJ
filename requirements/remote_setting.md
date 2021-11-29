@@ -65,7 +65,7 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 頭部はベース設定コマンド受付可の場合、ベース設定コマンドに走行部に送信する
+## 頭部はベース設定コマンド受付可の場合、ベース設定コマンドに走行部に送信する。受付不可の場合、設定失敗とする
 
 avatarin側の責務のため、対象外とする。
 
@@ -77,7 +77,7 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 頭部は設定に失敗した場合、その結果をアバタークラウドに返す
+## 頭部は設定の結果をアバタークラウドに返す
 
 avatarin側の責務のため、対象外とする。
 
@@ -92,9 +92,6 @@ avatarin側の責務のため、対象外とする。
 |要求|備考|
 |:---|:---|
 |Miimo Main ECUはベース設定コマンドの受付可否を判定する|ベース設定コマンドは、走行中（速度≠0）の時は受け付けない想定|
-
-
-
 
 <div style="page-break-before:always"></div>
 
@@ -113,7 +110,7 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 走行部は設定に失敗した場合、その結果を頭部に通知する
+## 走行部は設定の結果を頭部に通知する
 
 ![](.images/activity/remote_setting/act03.png)
 
