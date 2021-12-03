@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-06:一時停止する」の要求詳細化
 author: 株式会社 豆蔵
-date: 2021年11月22日
+date: 2021年12月01日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -48,6 +48,12 @@ date: 2021年11月22日
 
 <div style="page-break-before:always"></div>
 
+## 頭部は一時停止状態をアバタークラウドに送信する
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
 ## 胴体部は遠隔操作中に一時停止操作されたら走行部に一時停止を伝達する
 
 ![](.images/activity/pause/body-act01.png)
@@ -60,12 +66,6 @@ date: 2021年11月22日
 |電源停止スイッチはMiimo Main ECUに電源停止スイッチ押下を伝達する|※1|
 
 ※1:「電源停止スイッチタイミングチャート」資料により、電源停止スイッチは押下を検出するのみとする（スイッチ押下を電源ON/電源OFF/一時停止/一時停止解除のどの操作と解釈するかはMiimo Main ECUの責務）。
-
-<div style="page-break-before:always"></div>
-
-## 頭部は一時停止状態をアバタークラウドに送信する
-
-avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
@@ -128,5 +128,5 @@ avatarin側の責務のため、対象外とする。
 |要求|備考|
 |:---|:---|
 |Miimo Main ECUはアバターコアに一時停止を通知する||
-|Miimo Main ECUは一時停止中の表示指示を表示(LED等)に送信する|・L1分析時のフォーク要素から導出された要求<br/>・表示指示は「状態の表示」参照|
+|Miimo Main ECUは一時停止中の表示指示を表示(LED等)に送信する|・L1分析時のフォーク要素から導出された要求<br/>・表示指示は「状態を表示する」参照|
 
