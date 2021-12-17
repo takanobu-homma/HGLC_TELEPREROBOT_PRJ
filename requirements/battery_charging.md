@@ -48,66 +48,6 @@ date: 2021年12月01日
 
 <div style="page-break-before:always"></div>
 
-## 走行部は充電ステーションに接続する
-
-![](.images/activity/battery_charging/act01.png)
-
-**L2要求抽出**
-
-|要求|備考|
-|:---|:---|
-|Miimo Main ECUはDC接続を検出する||
-
-<div style="page-break-before:always"></div>
-
-## 走行部は充電を開始する
-
-![](.images/activity/battery_charging/act02.png)
-
-**L2要求抽出**
-
-|要求|備考|
-|:---|:---|
-|Miimo Main ECUはDC接続中にバッテリーの充電を開始する||
-
-<div style="page-break-before:always"></div>
-
-## 走行部は充電ステーション接続中に充電を停止する
-
-![](.images/activity/battery_charging/act03.png)
-
-**L2要求抽出**
-
-|要求|備考|
-|:---|:---|
-|Miimo Main ECUはDC接続中にバッテリーの充電を停止する||
-
-<div style="page-break-before:always"></div>
-
-## 走行部は充電ステーションから取り出す
-
-![](.images/activity/battery_charging/act04.png)
-
-**L2要求抽出**
-
-|要求|備考|
-|:---|:---|
-|Miimo Main ECUはDC切断を検出する||
-
-<div style="page-break-before:always"></div>
-
-## 走行部は充電ステーション未接続中に充電を停止する
-
-![](.images/activity/battery_charging/act05.png)
-
-**L2要求抽出**
-
-|要求|備考|
-|:---|:---|
-|Miimo Main ECUはDC未接続中にバッテリーの充電を停止する||
-
-<div style="page-break-before:always"></div>
-
 ## 胴体部は充電中であることを表示する
 
 ![](.images/activity/battery_charging/body-act01.png)
@@ -141,3 +81,64 @@ date: 2021年12月01日
 |要求|備考|
 |:---|:---|
 |表示（LED等）はMiimo Main ECUから受信した表示指示に従い表示制御する|表示制御については「状態を表示する」参照|
+
+<div style="page-break-before:always"></div>
+
+## 走行部は充電ステーションに接続する
+
+![](.images/activity/battery_charging/act01.png)
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|Miimo Main ECUはDC接続を検出する||
+
+<div style="page-break-before:always"></div>
+
+## 走行部は充電を開始する
+
+![](.images/activity/battery_charging/act02.png)
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|Miimo Main ECUはDC接続中にバッテリへ電力を供給する||
+|バッテリは充電する||
+
+<div style="page-break-before:always"></div>
+
+## 走行部は充電ステーション接続中に充電を停止する
+
+![](.images/activity/battery_charging/act03.png)
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|Miimo Main ECUはDC接続中にバッテリへの電力を停止する||
+
+<div style="page-break-before:always"></div>
+
+## 走行部は充電ステーションから取り出す
+
+![](.images/activity/battery_charging/act04.png)
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|Miimo Main ECUはDC切断を検出する||
+
+<div style="page-break-before:always"></div>
+
+## 走行部は充電ステーション未接続中に充電を停止する
+
+![](.images/activity/battery_charging/act05.png)
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|Miimo Main ECUはDC未接続中にバッテリへの電力を停止する||
