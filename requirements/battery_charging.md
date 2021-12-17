@@ -1,12 +1,13 @@
 ---
 title: テレプレゼンスロボット要求分析
-subtitle: 「SysRS-16:充電する」の要求詳細化
+subtitle: 「SysRS-16:充電する」のL2要求抽出
 author: 株式会社 豆蔵
 date: 2021年12月01日
 ---
-<!-- ↑表紙ページのための情報 -->
 
+<!-- 表紙ページのための改ページ -->
 <div style="page-break-before:always"></div>
+
 
 # はじめに
 
