@@ -1,6 +1,6 @@
 ---
 title: テレプレゼンスロボット要求分析
-subtitle: 「SysRS-03:遠隔で操作する」の要求詳細化
+subtitle: 「SysRS-03:遠隔で操作する」のL2要求抽出
 author: 株式会社 豆蔵
 date: 2021年11月22日
 ---
