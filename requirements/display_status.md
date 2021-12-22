@@ -69,7 +69,7 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 胴体部はステータスを表示する
+## 胴体部は状態を表示する
 
 ![](.images/activity/display_status/body-act02.png)
 
@@ -110,7 +110,7 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 走行部は各部から状態の変化を受信しステータスを決定する
+## 走行部は各部から状態の変化を受信し表示する状態を決定する
 
 ![](.images/activity/display_status/act02.png)
 
