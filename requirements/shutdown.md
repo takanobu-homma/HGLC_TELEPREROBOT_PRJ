@@ -46,15 +46,81 @@ date: 2021年12月10日
 
 <div style="page-break-before:always"></div>
 
-## 頭部は一時停止状態をアバタークラウドに送信する
+## 頭部は頭部のシャットダウン操作を走行部に通知する
 
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 走行部は一時停止信号を受信したら直ちに一時停止する
+## 頭部は頭部のシャットダウン操作または、走行部からのシャットダウン開始を受信し終了処理を開始する
 
-![](.images/activity/pause/act01.png)
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部はアバタークラウドを切断する
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は自己診断を行う
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は終了する
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 頭部は走行部へ終了処理完了通知を送信する
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+## 胴体部はシャットダウンしていることを表示する
+
+![](.images/activity/shutdown/body-act01.png)
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|||
+
+<div style="page-break-before:always"></div>
+
+## 胴体部は頭部による自己診断を受ける
+
+![](.images/activity/shutdown/body-act02.png)
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|||
+
+<div style="page-break-before:always"></div>
+
+## 胴体部は電源OFFにより状態表示をOFFにする
+
+![](.images/activity/shutdown/body-act03.png)
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|||
+
+<div style="page-break-before:always"></div>
+
+## 走行部はシャットダウン開始を受信する
+
+![](.images/activity/shutdown/act01.png)
 
 
 **L2要求抽出**
@@ -63,4 +129,89 @@ avatarin側の責務のため、対象外とする。
 |:---|:---|
 |||
 
+<div style="page-break-before:always"></div>
 
+## 走行部は頭部へシャットダウン開始を通知する
+
+![](.images/activity/shutdown/act01.png)
+
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|||
+
+<div style="page-break-before:always"></div>
+
+## 走行部は頭部への電源をOFFする
+
+![](.images/activity/shutdown/act01.png)
+
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|||
+
+<div style="page-break-before:always"></div>
+
+## 走行部は自己診断を行う
+
+![](.images/activity/shutdown/act01.png)
+
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|||
+
+<div style="page-break-before:always"></div>
+
+## 走行部は自己診断が正常に完了した場合、走行履歴を保存する
+
+![](.images/activity/shutdown/act01.png)
+
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|||
+
+<div style="page-break-before:always"></div>
+
+## 走行部は自己診断で異常があった場合、走行履歴および診断結果を保存する
+
+![](.images/activity/shutdown/act01.png)
+
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|||
+
+## 走行部は走行部を終了する
+
+![](.images/activity/shutdown/act01.png)
+
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|||
+
+## 走行部は走行部の電源をOFFにする
+
+![](.images/activity/shutdown/act01.png)
+
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|||
