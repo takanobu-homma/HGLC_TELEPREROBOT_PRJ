@@ -119,6 +119,7 @@ avatarin側の責務のため、対象外とする。
 |要求|備考|
 |:---|:---|
 |Miimo Main ECUはバッテリから電源が供給されている状態で胴体部の電源ON操作により起動処理を開始する||
+|Miimo Main ECUは電源を分配（オプション電源に出力）する|電源基板で利用するため|
 |Miimo Main ECUはエリアセンサに電源を供給する||
 |Miimo Main ECUは左走行モータに電源を供給する||
 |Miimo Main ECUは右走行モータに電源を供給する||
@@ -126,7 +127,6 @@ avatarin側の責務のため、対象外とする。
 |Miimo Main ECUはIMUに電源を供給する||
 |Miimo Main ECUはBluetoothモジュールに電源を供給する||
 |Miimo Main ECUはEEPROMに電源を供給する||
-|Miimo Main ECUは電源基板に電源を供給する|オプション電源から給電する想定|
 
 
 <div style="page-break-before:always"></div>
@@ -140,6 +140,7 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
+|Miimo Main ECUは電源基板に電源を供給する|オプション電源から給電する想定|
 |電源基板は頭部に電源を供給する||
 |電源基板は胴体部に電源を供給する||
 
