@@ -62,14 +62,7 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部はセンサーで値を取得する
 
-![](.images/activity/send_data/body-act01.png)
-
-**L2要求抽出**
-a
-|要求|備考|
-|:---|:---|
-|胴体部は水平モータのデータを取得する||
-|胴体部は垂直モータのデータを取得する||
+avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
