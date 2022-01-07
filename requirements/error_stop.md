@@ -54,7 +54,7 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 頭部は頭部内の異常を走行部に通知する
+## 頭部は頭部および胴体内の異常を走行部に通知する
 
 avatarin側の責務のため、対象外とする。
 
@@ -78,10 +78,23 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
+## 胴体部は胴体内の異常を検知し、頭部に通知する
+
+![](.images/activity/error_stop/body-act01.png)
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|垂直モータは異常を検知し、頭部に通知する||
+|水平モータは異常を検知し、頭部に通知する||
+
+<div style="page-break-before:always"></div>
+
 
 ## 胴体部は本体の異常を本体に表示する
 
-![](.images/activity/error_stop/body-act01.png)
+![](.images/activity/error_stop/body-act02.png)
 
 **L2要求抽出**
 
@@ -93,7 +106,7 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は頭部からの指示を受けて首振り動作を停止する
 
-![](.images/activity/error_stop/body-act02.png)
+![](.images/activity/error_stop/body-act03.png)
 
 **L2要求抽出**
 
