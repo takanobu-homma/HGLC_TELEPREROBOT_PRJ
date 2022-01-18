@@ -58,13 +58,21 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 頭部はアバタークラウドを切断する
+## 頭部は自己診断を行う
 
 avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 頭部は自己診断を行う
+
+## 頭部は自己診断結果をアバタークラウドに送信する
+
+avatarin側の責務のため、対象外とする。
+
+<div style="page-break-before:always"></div>
+
+
+## 頭部はアバタークラウドを切断する
 
 avatarin側の責務のため、対象外とする。
 
@@ -130,7 +138,7 @@ avatarin側の責務のため、対象外とする。
 |要求|備考|
 |:---|:---|
 |Miimo Main ECUは胴体部の電源OFF操作または、頭部からのシャットダウン開始指示によりシャットダウン処理を開始する||
-|Miimo Main ECUはシャットダウン開始表紙指示を胴体部に通知する|シャットダウン処理中であることを表示するため|
+|Miimo Main ECUはシャットダウン開始表示指示を胴体部に通知する|シャットダウン処理中であることを表示するため|
 
 <div style="page-break-before:always"></div>
 
@@ -183,6 +191,20 @@ avatarin側の責務のため、対象外とする。
 |Miimo Main ECUはEEPROMの診断を行う|※1|
 |Miimo Main ECUはバッテリの診断を行う|※1|
 ※1:シャットダウン時の診断は通電とCAN通信の疎通確認のみの簡易的なものを想定（起動時と同等）
+
+<div style="page-break-before:always"></div>
+
+## 走行部は自己診断結果を頭部に送信する
+
+![](.images/activity/shutdown/act04a.png)
+
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|Miimo Main ECUは自己診断結果を頭部に送信する|※1|
+※1:頭部からアバタークラウドへ送信するため
 
 <div style="page-break-before:always"></div>
 
