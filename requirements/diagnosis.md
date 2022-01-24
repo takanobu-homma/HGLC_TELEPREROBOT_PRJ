@@ -94,7 +94,7 @@ avatarin側の責務のため、対象外とする。
 |Miimo Main ECUはEEPROMに車体番号の読み出しを依頼する||
 |Miimo Main ECUはEEPROMから受けた車体番号を診断PCに送信する|※1|
 |EEPROMはMiimo Main ECUの依頼を受けて車体番号を返す|※3|
-※1:診断PCとの通信はUSB/Bluetooth(115K)/Bluetooth(460K)に応じた通信コンポーネントを経由する想定
+※1:診断PCとの通信はリプロ用コネクタを経由する想定
 ※2:テストモードの起動/通信確立手順の詳細は状態分析とともに要QA
 ※3:車体番号の保存先をEEPROMと想定
 
