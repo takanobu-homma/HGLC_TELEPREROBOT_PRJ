@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-05:遠隔で設定する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2021年11月26日
+date: 2022年1月28日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -43,8 +43,6 @@ date: 2021年11月26日
 ![](.images/conceptual/setting_command.png)
 
 「SysRS-05:遠隔で設定する」のアクティビティ図を以下に示す。
-
-
 
 ![](.images/activity/remote_setting.png)
 
@@ -103,8 +101,8 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUは受信したエリア検出設定を反映し、avatarcoreに結果を送信する|・エリア検出設定はavatarcoreのarea_settingを利用する想定<br/>※1|
-|Miimo Main ECUは受信した最高速度設定を反映し、avatarcoreに結果を送信する|最高速度設定はavatarcoreのspeed_dataを利用する設定<br/>※1|
+|Miimo Main ECUは受信したエリア検出設定を反映し、頭部に結果を送信する|・エリア検出設定は頭部のarea_settingを利用する想定<br/>※1|
+|Miimo Main ECUは受信した最高速度設定を反映し、頭部に結果を送信する|最高速度設定は頭部のspeed_dataを利用する想定<br/>※1|
 
 ※1:頭部側で受付可否をチェックする想定ではあるが、設定失敗のケースを考慮
 
