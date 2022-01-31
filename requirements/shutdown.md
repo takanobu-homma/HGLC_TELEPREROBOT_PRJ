@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-15:シャットダウンする」の要求詳細化
 author: 株式会社 豆蔵
-date: 2022年1月28日
+date: 2022年1月31日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -255,11 +255,12 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|バッテリはMiimo Main ECUへの電源を遮断する||
-|Miimo Main ECUはエリアセンサへの電源供給をOFFにする||
-|Miimo Main ECUは左走行モータへの電源供給をOFFにする||
-|Miimo Main ECUは右走行モータへの電源供給をOFFにする||
-|Miimo Main ECUはブザーへの電源供給をOFFにする||
-|Miimo Main ECUはIMUへの電源供給をOFFにする||
-|Miimo Main ECUはBluetoothモジュールへの電源供給をOFFにする||
-|Miimo Main ECUはEEPROMへの電源供給をOFFにする||
+|Miimo Main ECUへの電源を遮断するする||
+|バッテリはMiimo Main ECUへの電源供給を停止する||
+|Miimo Main ECUはエリアセンサの電源をOFFにする||
+|Miimo Main ECUは左走行モータの電源をOFFにする||
+|Miimo Main ECUは右走行モータの電源をOFFにする||
+|Miimo Main ECUはブザーの電源をOFFにする||
+|Miimo Main ECUはIMUの電源をOFFにする||
+|Miimo Main ECUはBluetoothモジュールの電源をOFFにする||
+|Miimo Main ECUはEEPROMの電源をOFFにする||
