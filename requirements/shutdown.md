@@ -255,12 +255,12 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUへの電源を遮断するする||
+|Miimo Main ECUへの電源を遮断する||
 |バッテリはMiimo Main ECUへの電源供給を停止する||
-|Miimo Main ECUはエリアセンサの電源をOFFにする||
-|Miimo Main ECUは左走行モータの電源をOFFにする||
-|Miimo Main ECUは右走行モータの電源をOFFにする||
-|Miimo Main ECUはブザーの電源をOFFにする||
-|Miimo Main ECUはIMUの電源をOFFにする||
-|Miimo Main ECUはBluetoothモジュールの電源をOFFにする||
-|Miimo Main ECUはEEPROMの電源をOFFにする||
+|Miimo Main ECUはエリアセンサへの電源供給をOFFにする||
+|Miimo Main ECUは左走行モータへの電源供給をOFFにする||
+|Miimo Main ECUは右走行モータへの電源供給をOFFにする||
+|Miimo Main ECUはブザーへの電源供給をOFFにする||
+|Miimo Main ECUはIMUへの電源供給をOFFにする||
+|Miimo Main ECUはBluetoothモジュールへの電源供給をOFFにする||
+|Miimo Main ECUはEEPROMへの電源供給をOFFにする||
