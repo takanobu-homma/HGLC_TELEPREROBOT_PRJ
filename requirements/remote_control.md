@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-03:遠隔で操作する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2021年11月22日
+date: 2022年1月28日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -38,8 +38,6 @@ date: 2021年11月22日
 # L2要求分析
 
 「SysRS-03:遠隔で操作する」のアクティビティ図を以下に示す。
-
-
 
 ![](.images/activity/remote_control.png)
 
@@ -112,7 +110,7 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUは外部指示有効をアバターコアに通知する||
+|Miimo Main ECUは外部指示有効を頭部に通知する||
 
 <div style="page-break-before:always"></div>
 
