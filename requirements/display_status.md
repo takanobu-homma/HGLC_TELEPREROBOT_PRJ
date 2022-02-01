@@ -103,7 +103,8 @@ avatarin側の責務のため、対象外とする。
 |一時停止|SysRS-06:一時停止する|
 |一時停止解除|SysRS-07:一時停止を解除する|
 |バッテリ残量の閾値超え/回復|SysRS-10:バッテリ残量低下を検知し停止する<br/>SysRS-16:充電する|
-|走行部内異常(Fault/Warning/Caution)発生|SysRS-11:異常を検知し停止する|
+|走行部内異常(Fault/Warning/Caution)発生|SysRS-11a:異常を検知し停止する|
+|走行部内異常(Fault/Warning/Caution)復帰|SysRS-11b:異常状態から復帰する|
 |終了処理の開始/終了|SysRS-15:シャットダウンする|
 |充電ステーションON/OFF検知|SysRS-16:充電する|
 |テスト中/リプロ中の開始/終了|SysRS-19～21およびSysRS-22|
