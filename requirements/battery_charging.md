@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-16:充電する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2021年12月01日
+date: 2022年1月28日
 ---
 
 <!-- 表紙ページのための改ページ -->
@@ -42,7 +42,7 @@ date: 2021年12月01日
 
 
 
-![](.images/activity/charge.png)
+![](.images/activity/battery_charging.png)
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -57,7 +57,7 @@ date: 2021年12月01日
 
 |要求|備考|
 |:---|:---|
-|表示（LED等）はMiimo Main ECUから受信した表示指示に従い表示制御する|表示制御については「状態を表示する」参照|
+|表示（LED等）は走行部から受信した表示指示に従い表示制御する|表示制御については「状態を表示する」参照|
 
 <div style="page-break-before:always"></div>
 
@@ -69,11 +69,11 @@ date: 2021年12月01日
 
 |要求|備考|
 |:---|:---|
-|表示（LED等）はMiimo Main ECUから受信した表示指示に従い表示制御する|表示制御については「状態を表示する」参照|
+|表示（LED等）は走行部から受信した表示指示に従い表示制御する|表示制御については「状態を表示する」参照|
 
 <div style="page-break-before:always"></div>
 
-## 胴体部は充電ステーションから取り外されたことを表示する
+## 胴体部は充電ステーションから切り離されたことを表示する
 
 ![](.images/activity/battery_charging/body-act03.png)
 
@@ -81,7 +81,7 @@ date: 2021年12月01日
 
 |要求|備考|
 |:---|:---|
-|表示（LED等）はMiimo Main ECUから受信した表示指示に従い表示制御する|表示制御については「状態を表示する」参照|
+|表示（LED等）は走行部から受信した表示指示に従い表示制御する|表示制御については「状態を表示する」参照|
 
 <div style="page-break-before:always"></div>
 
@@ -93,7 +93,7 @@ date: 2021年12月01日
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUはDC接続を検出する||
+|Miimo Main ECUはDC接続を検知する||
 
 <div style="page-break-before:always"></div>
 
@@ -118,11 +118,11 @@ date: 2021年12月01日
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUはDC接続中にバッテリへの電力を停止する||
+|Miimo Main ECUはDC接続中に満充電を検知したら、バッテリへの電力供給を停止する||
 
 <div style="page-break-before:always"></div>
 
-## 走行部は充電ステーションから取り出す
+## 走行部は充電ステーションから切り離す
 
 ![](.images/activity/battery_charging/act04.png)
 
@@ -130,11 +130,11 @@ date: 2021年12月01日
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUはDC切断を検出する||
+|Miimo Main ECUはDC切断を検知する||
 
 <div style="page-break-before:always"></div>
 
-## 走行部は充電ステーション未接続中に充電を停止する
+## 走行部は充電ステーションから切り離されたら充電を停止する
 
 ![](.images/activity/battery_charging/act05.png)
 
@@ -142,4 +142,4 @@ date: 2021年12月01日
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUはDC未接続中にバッテリへの電力を停止する||
+|Miimo Main ECUはDC切断を検知したら、バッテリへの電力供給を停止する||
