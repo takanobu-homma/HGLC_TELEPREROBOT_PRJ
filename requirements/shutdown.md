@@ -255,7 +255,7 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUへの電源を遮断する||
+|Miimo Main ECUは電源を遮断する||
 |バッテリはMiimo Main ECUへの電源供給を停止する||
 |Miimo Main ECUはエリアセンサへの電源供給をOFFにする||
 |Miimo Main ECUは左走行モータへの電源供給をOFFにする||

@@ -40,7 +40,9 @@ date: 2022年1月28日
 
 「SysRS-16:充電する」のアクティビティ図を以下に示す。
 
-![](.images/activity/charge.png)
+
+
+![](.images/activity/battery_charging.png)
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -116,7 +118,7 @@ date: 2022年1月28日
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUはDC接続中に満充電を検知したら、バッテリへの電力を停止する||
+|Miimo Main ECUはDC接続中に満充電を検知したら、バッテリへの電力供給を停止する||
 
 <div style="page-break-before:always"></div>
 
@@ -140,4 +142,4 @@ date: 2022年1月28日
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUはDC切断を検知したら、バッテリへの電力を停止する||
+|Miimo Main ECUはDC切断を検知したら、バッテリへの電力供給を停止する||
