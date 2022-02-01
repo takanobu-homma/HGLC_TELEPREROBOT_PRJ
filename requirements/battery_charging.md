@@ -71,7 +71,7 @@ date: 2022年1月28日
 
 <div style="page-break-before:always"></div>
 
-## 胴体部は充電ステーションから取り外されたことを表示する
+## 胴体部は充電ステーションから切り離されたことを表示する
 
 ![](.images/activity/battery_charging/body-act03.png)
 
@@ -91,7 +91,7 @@ date: 2022年1月28日
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUはDC接続を検出する||
+|Miimo Main ECUはDC接続を検知する||
 
 <div style="page-break-before:always"></div>
 
@@ -116,11 +116,11 @@ date: 2022年1月28日
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUはDC接続中にバッテリへの電力を停止する||
+|Miimo Main ECUはDC接続中に満充電を検知したら、バッテリへの電力を停止する||
 
 <div style="page-break-before:always"></div>
 
-## 走行部は充電ステーションから取り出す
+## 走行部は充電ステーションから切り離す
 
 ![](.images/activity/battery_charging/act04.png)
 
@@ -128,11 +128,11 @@ date: 2022年1月28日
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUはDC切断を検出する||
+|Miimo Main ECUはDC切断を検知する||
 
 <div style="page-break-before:always"></div>
 
-## 走行部は充電ステーション未接続中に充電を停止する
+## 走行部は充電ステーションから切り離されたら充電を停止する
 
 ![](.images/activity/battery_charging/act05.png)
 
@@ -140,4 +140,4 @@ date: 2022年1月28日
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUはDC未接続中にバッテリへの電力を停止する||
+|Miimo Main ECUはDC切断を検知したら、バッテリへの電力を停止する||
