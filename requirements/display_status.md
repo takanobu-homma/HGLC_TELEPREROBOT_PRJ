@@ -81,7 +81,7 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 走行部は各部から状態の変化を検知し表示する状態を決定する
+## 走行部は状態の変化を検知したら、状態情報を送信する
 
 ![](.images/activity/display_status/act01.png)
 
@@ -90,10 +90,7 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUは状態の変化を検知する|※1|
-|Miimo Main ECUは優先順位に応じて胴体部への表示指示を行う|※2|
-|Miimo Main ECUは優先順位に応じて頭部への状態通知を行う|※2|
-
+|Miimo Main ECUは状態の変化を検知し通知する|※1|
 ※1:走行部で検知する状態変化は、以下を想定  
 
 |状態変化|対応する要求|
@@ -109,7 +106,20 @@ avatarin側の責務のため、対象外とする。
 |充電ステーションON/OFF検知|SysRS-16:充電する|
 |テスト中/リプロ中の開始/終了|SysRS-19～21およびSysRS-22|
 
-※2:優先順位はL0/L1分析資料のSysRS-12参照。  
+<div style="page-break-before:always"></div>
+
+## 走行部は各部から状態の変化を検知し表示する状態を決定する
+
+![](.images/activity/display_status/act02.png)
+
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|Miimo Main ECUは優先順位に応じて胴体部への表示指示を行う|※1|
+|Miimo Main ECUは優先順位に応じて頭部への状態通知を行う|※1|
+※1:優先順位はL0/L1分析資料のSysRS-12参照  
 
 <div style="page-break-before:always"></div>
 
