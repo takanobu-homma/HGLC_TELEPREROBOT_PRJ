@@ -82,6 +82,12 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
+## 胴体部は電源ON操作を受け付ける
+
+電源ONのフローについてはSysRS-01:起動するで詳細化を行っているため割愛
+
+<div style="page-break-before:always"></div>
+
 ## 胴体部は異常状態が解消されたことを表示する
 
 ![](.images/activity/error_recovery/body-act03.png)
