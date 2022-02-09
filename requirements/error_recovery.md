@@ -58,7 +58,7 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 胴体部はCautionおよびWarning1状態の時に復帰操作を受け付ける
+## 胴体部はCautionおよびWarning2状態の時に復帰操作を受け付ける
 
 ![](.images/activity/error_recovery/body-act01.png)
 
@@ -70,7 +70,7 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 胴体部はFault状態の時に再起動操作を受け付ける
+## 胴体部はFault状態の時に電源OFF操作を受け付ける
 
 ![](.images/activity/error_recovery/body-act02.png)
 
@@ -78,7 +78,13 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|電源停止スイッチは再起動操作を検知し走行部に通知する|再起動は一度電源OFFしてから電源ONを行う想定|
+|電源停止スイッチは電源OFF操作を検知しシャットダウン開始を走行部に通知する|Fault状態の時でも操作できること|
+
+<div style="page-break-before:always"></div>
+
+## 胴体部は電源ON操作を受け付ける
+
+電源ONのフローについてはSysRS-01:起動するで詳細化を行っているため割愛
 
 <div style="page-break-before:always"></div>
 
@@ -90,7 +96,7 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|表示（LED等）は走行部からの表示指示に異常状態が解消されたことを表示する|表示指示については「状態を表示する」参照|
+|表示（LED等）は走行部からの表示指示に従い異常状態が解消されたことを表示する|表示指示については「状態を表示する」参照|
 
 
 <div style="page-break-before:always"></div>
@@ -131,7 +137,7 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 走行部は再起動によりFault状態を解消する
+## 走行部は起動中にFault状態を解消する
 
 ![](.images/activity/error_recovery/act03.png)
 
@@ -140,7 +146,7 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUは再起動によりFault状態を解消する||
+|Miimo Main ECUは起動時にFault状態を解消する||
 |Miimo Main ECUはFault状態解除指示を送信する||
 
 
@@ -155,6 +161,7 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
+|Miimo Main ECUはFault状態が解消されたことを確認する||
 |Miimo Main ECUは内部のCautionおよびWarning状態が解消されたことを確認する||
 |Miimo Main ECUはエリアセンサのCautionおよびWarning状態が解消されたことを確認する||
 |Miimo Main ECUは左走行モータのCautionおよびWarning状態が解消されたことを確認する||

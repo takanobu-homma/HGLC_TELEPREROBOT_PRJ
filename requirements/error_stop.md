@@ -91,10 +91,21 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
+## 胴体部は胴体内の異常を検知したら保護機能を作動する
+
+![](.images/activity/error_stop/body-act02.png)
+
+**L2要求抽出**
+
+|要求|備考|
+|:---|:---|
+|垂直モータは異常を検知したら、保護機能を作動する|※1|
+|水平モータは異常を検知したら、保護機能を作動する|※1|
+※1:保護機能によりモータ駆動を停止する想定
 
 ## 胴体部は本体の異常を本体に表示する
 
-![](.images/activity/error_stop/body-act02.png)
+![](.images/activity/error_stop/body-act03.png)
 
 **L2要求抽出**
 
@@ -106,7 +117,7 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は頭部からの指示を受けて首振り動作を停止する
 
-![](.images/activity/error_stop/body-act03.png)
+![](.images/activity/error_stop/body-act04.png)
 
 **L2要求抽出**
 

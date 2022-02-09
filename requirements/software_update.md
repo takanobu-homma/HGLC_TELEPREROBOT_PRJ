@@ -86,9 +86,8 @@ avatarin側の責務のため、対象外とする。
 |要求|備考|
 |:---|:---|
 |Miimo Main ECUは書き換え用PCから走行部ソフトウェアを受信する||
-|Miimo Main ECUはEEPROMに走行部ソフトウェアの書き換えを依頼する||
-|Miimo Main ECUはEEPROMから受けたソフトウェア書き換え結果を書き換え用PCに送信する|※1※2|
-|EEPROMはMiimo Main ECUの依頼を受けて走行部ソフトウェアを書き換え、その結果を返す||
+|Miimo Main ECUは走行部ソフトウェアを書き換える||
+|Miimo Main ECUはソフトウェア書き換え結果を書き換え用PCに送信する|※1※2|
 ※1:書き換え用PCは書き換え結果を元に再起動（失敗の場合は書き換えの再試行）を促す想定  
 ※2:書き換え直後の再起動はリプロ用の再起動シーケンスとなる想定
 
@@ -102,10 +101,8 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUはEEPROMに新しいソフトウェアの読み出しを依頼する||
+|Miimo Main ECUは新しいソフトウェアを読み出す||
 |Miimo Main ECUは新しいソフトウェアを実行する||
-|EEPROMはMiimo Main ECUの依頼を受けて走行部ソフトウェアを返す||
-※:走行部ソフトウェアの形式/読み出し/実行の詳細については要QA
 
 <div style="page-break-before:always"></div>
 
@@ -117,7 +114,6 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUはEEPROMにソフトウェアバージョンの読み出しを依頼する||
-|Miimo Main ECUはEEPROMから受けたソフトウェアバージョンを書き換え用PCに送信する||
-|EEPROMはMiimo Main ECUの依頼を受けてソフトウェアバージョンを返す||
+|Miimo Main ECUはソフトウェアバージョンを読み出す||
+|Miimo Main ECUはソフトウェアバージョンを書き換え用PCに送信する||
 
