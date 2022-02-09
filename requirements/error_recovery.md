@@ -146,7 +146,7 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUは起動時Fault状態を解消する||
+|Miimo Main ECUは起動時にFault状態を解消する||
 |Miimo Main ECUはFault状態解除指示を送信する||
 
 
