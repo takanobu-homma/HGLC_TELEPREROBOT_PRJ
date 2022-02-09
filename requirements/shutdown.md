@@ -208,7 +208,7 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 走行部は自己診断が正常に完了した場合、走行履歴を保存する
+## 走行部は自己診断が正常に完了した場合、運転履歴を保存する
 
 ![](.images/activity/shutdown/act05.png)
 
@@ -217,12 +217,12 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUは自己診断が正常に完了した場合、走行履歴をEEPROMに送信する||
-|EEPROMは走行履歴を書き込む||
+|Miimo Main ECUは自己診断が正常に完了した場合、運転履歴をEEPROMに送信する||
+|EEPROMは運転履歴を書き込む||
 
 <div style="page-break-before:always"></div>
 
-## 走行部は自己診断で異常があった場合、走行履歴および診断結果を保存する
+## 走行部は自己診断で異常があった場合、運転履歴および診断結果を保存する
 
 ![](.images/activity/shutdown/act06.png)
 
@@ -231,8 +231,8 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUは自己診断で異常があった場合、走行履歴と診断結果をEEPROMに送信する||
-|EEPROMは走行履歴と診断結果を書き込む|EEPROMへの書き込みができない場合も診断異常として扱う|
+|Miimo Main ECUは自己診断で異常があった場合、運転履歴と診断結果をEEPROMに送信する||
+|EEPROMは運転履歴と診断結果を書き込む|EEPROMへの書き込みができない場合も診断異常として扱う|
 
 ## 走行部は走行部を終了する
 
