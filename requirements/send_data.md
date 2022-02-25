@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-14:データを送信する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年1月31日
+date: 2022年2月24日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -82,8 +82,8 @@ avatarin側の責務のため、対象外とする。
 
 |要求|備考|
 |:---|:---|
-|Miimo Main ECUは走行モータ左のデータを取得する||
-|Miimo Main ECUは走行モータ右のデータを取得する||
+|Miimo Main ECUは左走行モータのデータを取得する||
+|Miimo Main ECUは右走行モータのデータを取得する||
 |Miimo Main ECUはバッテリのデータを取得する||
 |Miimo Main ECUは充電ステーションのデータを取得する||
 |Miimo Main ECUはエリア情報のデータを取得する||
