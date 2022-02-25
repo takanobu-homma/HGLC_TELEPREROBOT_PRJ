@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-11b:異常状態から復帰する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年2月08日
+date: 2022年2月25日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -137,7 +137,7 @@ avatarin側の責務のため、対象外とする。
 
 <div style="page-break-before:always"></div>
 
-## 走行部は起動中にFault状態を解消する
+## 走行部は起動時にFault状態を解消する
 
 ![](.images/activity/error_recovery/act03.png)
 
