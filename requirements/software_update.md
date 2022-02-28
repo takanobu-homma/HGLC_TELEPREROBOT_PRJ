@@ -72,7 +72,7 @@ avatarin側の責務のため、対象外とする。
 |Miimo Main ECUはEEPROMに車体番号の読み出しを依頼する||
 |Miimo Main ECUはEEPROMから受けた車体番号を書き換え用PCに送信する|※2|
 |EEPROMはMiimo Main ECUの依頼を受けて車体番号を返す||
-※1:書き換え用PCとの通信確立の詳細は、リプロモードの起動として状態分析とともに要QA  
+※1:書き換え用PCからリプロモード遷移指示を受け付ける想定  
 ※2:書き換え用PCとの通信はリプロ用コネクタを経由する想定
 
 <div style="page-break-before:always"></div>
@@ -89,7 +89,7 @@ avatarin側の責務のため、対象外とする。
 |Miimo Main ECUは走行部ソフトウェアを書き換える||
 |Miimo Main ECUはソフトウェア書き換え結果を書き換え用PCに送信する|※1※2|
 ※1:書き換え用PCは書き換え結果を元に電源OFF操作後に電源ON操作（失敗の場合は書き換えの再試行）を促す想定  
-※2:リプロ手順は、SW書き換え→書き換え用PCからのシャットダウン指示→Miimo Main ECUのシャットダウン→人が電源ONを実施→書き換え用PCからSWバージョン確認実施、を想定（外部指示によりMiimo Main ECUのシャットダウンが必須のため、DC-ONではリプロ不可）
+※2:リプロ手順は、走行部ソフトウェア書き換え→書き換え用PCからのシャットダウン指示→Miimo Main ECUのシャットダウン→人が電源ONを実施→書き換え用PCから走行部ソフトウェアバージョン確認実施、を想定（外部指示によりMiimo Main ECUのシャットダウンが必須のため、DC-ONではリプロ不可）
 
 <div style="page-break-before:always"></div>
 
