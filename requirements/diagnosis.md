@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-21:動作確認を実施する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年1月21日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -41,7 +41,8 @@ date: 2022年1月21日
 
 
 
-![](.images/activity/diagnosis.png)
+![](.images/activity/diagnosis.png)  
+modelID:{SysRM-act21}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -68,7 +69,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は頭部による機能テストを受ける
 
-![](.images/activity/diagnosis/body-act01.png)
+![](.images/activity/diagnosis/body-act01.png)  
+modelID:{SysRM-act21-01}
 
 **L2要求抽出**
 
@@ -84,7 +86,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は診断PCとの通信を確立し、車体情報を送信する
 
-![](.images/activity/diagnosis/act01.png)
+![](.images/activity/diagnosis/act01.png)  
+modelID:{SysRM-act21-02}
 
 **L2要求抽出**
 
@@ -102,7 +105,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は外部からの指示で機能テストを実行する
 
-![](.images/activity/diagnosis/act02.png)
+![](.images/activity/diagnosis/act02.png)  
+modelID:{SysRM-act21-03}
 
 **L2要求抽出**
 

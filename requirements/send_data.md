@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-14:データを送信する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年2月24日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -39,9 +39,9 @@ date: 2022年2月24日
 
 「SysRS-14:データを送信する」のアクティビティ図を以下に示す。
 
+![](.images/activity/send_data.png)  
+modelID:{SysRM-act14}
 
-
-![](.images/activity/send_data.png)
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -62,7 +62,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部はセンサーで値を取得する
 
-![](.images/activity/send_data/body-act01.png)
+![](.images/activity/send_data/body-act01.png)  
+modelID:{SysRM-act14-01}
 
 **L2要求抽出**
 
@@ -76,7 +77,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部はセンサーで値を取得する
 
-![](.images/activity/send_data/act01.png)
+![](.images/activity/send_data/act01.png)  
+modelID:{SysRM-act14-02}
 
 **L2要求抽出**
 
@@ -95,7 +97,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は頭部にセンサーの値を送信する
 
-![](.images/activity/send_data/act02.png)
+![](.images/activity/send_data/act02.png)  
+modelID:{SysRM-act14-03}
 
 **L2要求抽出**
 

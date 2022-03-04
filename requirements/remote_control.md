@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-03:遠隔で操作する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年2月25日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -40,10 +40,12 @@ date: 2022年2月25日
 「SysRS-03:遠隔で操作する」の操作コマンドの概念モデルおよびアクティビティ図を以下に示す。
 
 コマンドの概念モデル
-![](.images/conceptual/control_command.png)
+![](.images/conceptual/control_command.png)  
+modelID:{SysRM-con03}
 
 アクティビティ図
-![](.images/activity/remote_control.png)
+![](.images/activity/remote_control.png)  
+modelID:{SysRM-act03}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 本書内で記載している状態の詳細については「テレプレゼンスロボット要求分析_L0L1要求抽出.docx」内の「テレプレゼンスロボット本体の状態の整理」の章を参照のこと  
@@ -95,7 +97,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は首操作指示を受けて、首を動かす
 
-![](.images/activity/remote_control/body-act01.png)
+![](.images/activity/remote_control/body-act01.png)  
+modelID:{SysRM-act03-01}
 
 **L2要求抽出**
 
@@ -108,7 +111,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は一時停止を解除し外部指示を有効であることを頭部に通知する
 
-![](.images/activity/remote_control/act01.png)
+![](.images/activity/remote_control/act01.png)  
+modelID:{SysRM-act03-02}
 
 
 **L2要求抽出**
@@ -121,7 +125,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部はベース操作コマンドを実行できる状態であることを確認する
 
-![](.images/activity/remote_control/act02.png)
+![](.images/activity/remote_control/act02.png)  
+modelID:{SysRM-act03-03}
 
 
 ### コマンドが実行可能かを判定する
@@ -159,7 +164,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部はベース操作コマンドに従い走行する
 
-![](.images/activity/remote_control/act03.png)
+![](.images/activity/remote_control/act03.png)  
+modelID:{SysRM-act03-04}
 
 
 **L2要求抽出**

@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-05:遠隔で設定する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年1月28日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -40,11 +40,13 @@ date: 2022年1月28日
 「SysRS-05:遠隔で設定する」での設定コマンド概要を以下に示す。
 走行部に対する設定としてベース設定コマンドがある。
 
-![](.images/conceptual/setting_command.png)
+![](.images/conceptual/setting_command.png)  
+modelID:{SysRM-con05}
 
 「SysRS-05:遠隔で設定する」のアクティビティ図を以下に示す。
 
-![](.images/activity/remote_setting.png)
+![](.images/activity/remote_setting.png)  
+modelID:{SysRM-act05}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -83,7 +85,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部はベース設定コマンドを受付可能か回答する
 
-![](.images/activity/remote_setting/act01.png)
+![](.images/activity/remote_setting/act01.png)  
+modelID:{SysRM-act05-01}
 
 **L2要求抽出**
 
@@ -95,7 +98,9 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部はベース設定コマンドで指定された設定をする
 
-![](.images/activity/remote_setting/act02.png)
+![](.images/activity/remote_setting/act02.png)  
+modelID:{SysRM-act05-02}
+
 
 **L2要求抽出**
 
@@ -110,7 +115,9 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は設定の結果を頭部に通知する
 
-![](.images/activity/remote_setting/act03.png)
+![](.images/activity/remote_setting/act03.png)  
+modelID:{SysRM-act05-03}
+
 
 
 **L2要求抽出**

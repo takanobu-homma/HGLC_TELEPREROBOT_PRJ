@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-22:ソフトウェアアップデートを行う」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年2月25日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -41,7 +41,8 @@ date: 2022年2月25日
 
 
 
-![](.images/activity/software_update.png)
+![](.images/activity/software_update.png)  
+modelID:{SysRM-act22}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -62,7 +63,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は書き換え用PCとの通信を確立し、車体情報を送信する
 
-![](.images/activity/software_update/act01.png)
+![](.images/activity/software_update/act01.png)  
+modelID:{SysRM-act22-01}
 
 **L2要求抽出**
 
@@ -79,7 +81,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は書き換え用PCから走行部ソフトウェアを受信し、ソフトウェアを書き換える
 
-![](.images/activity/software_update/act02.png)
+![](.images/activity/software_update/act02.png)  
+modelID:{SysRM-act22-02}
 
 **L2要求抽出**
 
@@ -95,7 +98,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は電源OFF操作後に電源ON操作を行い新しいソフトウェアを有効化する
 
-![](.images/activity/software_update/act03.png)
+![](.images/activity/software_update/act03.png)  
+modelID:{SysRM-act22-03}
 
 **L2要求抽出**
 
@@ -108,7 +112,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部はソフトウェアのバージョンを書き換え用PCに通知する
 
-![](.images/activity/software_update/act04.png)
+![](.images/activity/software_update/act04.png)  
+modelID:{SysRM-act22-04}
 
 **L2要求抽出**
 

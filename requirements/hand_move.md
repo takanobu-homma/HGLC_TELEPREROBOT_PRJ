@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-24:手押しで移動する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年2月28日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -39,7 +39,8 @@ date: 2022年2月28日
 
 「SysRS-24:手押しで移動する」のアクティビティ図を以下に示す。
 
-![](.images/activity/hand_move.png)
+![](.images/activity/hand_move.png)  
+modelID:{SysRM-act24}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -48,7 +49,8 @@ date: 2022年2月28日
 
 ## 走行部はテレプレゼンスロボット本体の押し引きで移動する
 
-![](.images/activity/hand_move/act01.png)
+![](.images/activity/hand_move/act01.png)  
+modelID:{SysRM-act24-01}
 
 **L2要求抽出**
 

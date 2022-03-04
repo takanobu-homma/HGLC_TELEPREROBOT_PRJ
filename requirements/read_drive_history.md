@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-19:運転履歴を読み出す」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年1月21日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -43,14 +43,16 @@ date: 2022年1月21日
  - 故障履歴
  - ドライブレコーダー  
 
-![](.images/conceptual/drive_history.png)
+![](.images/conceptual/drive_history.png)  
+modelID:{SysRM-con19}
 
 
 「SysRS-19:運転履歴を読み出す」のアクティビティ図を以下に示す。
 
 
 
-![](.images/activity/read_drive_history.png)
+![](.images/activity/read_drive_history.png)  
+modelID:{SysRM-act19}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -59,7 +61,8 @@ date: 2022年1月21日
 
 ## 走行部は診断PCからのログインに応じて通信を確立し、車体情報を送信する
 
-![](.images/activity/read_drive_history/act01.png)
+![](.images/activity/read_drive_history/act01.png)  
+modelID:{SysRM-act19-01}
 
 **L2要求抽出**
 
@@ -77,7 +80,8 @@ date: 2022年1月21日
 
 ## 走行部は運転履歴を取得し診断PCへ送信する
 
-![](.images/activity/read_drive_history/act02.png)
+![](.images/activity/read_drive_history/act02.png)  
+modelID:{SysRM-act19-02}
 
 **L2要求抽出**
 

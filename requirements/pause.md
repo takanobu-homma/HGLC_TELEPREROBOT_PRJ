@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-06:一時停止する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年1月28日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -39,7 +39,8 @@ date: 2022年1月28日
 
 「SysRS-06:一時停止する」のアクティビティ図を以下に示す。
 
-![](.images/activity/pause.png)
+![](.images/activity/pause.png)  
+modelID:{SysRM-act06}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -54,7 +55,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は遠隔操作中に一時停止操作されたら走行部に一時停止を伝達する
 
-![](.images/activity/pause/body-act01.png)
+![](.images/activity/pause/body-act01.png)  
+modelID:{SysRM-act06-01}
 
 **L2要求抽出**
 
@@ -69,7 +71,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は一時停止状態であることを表示する
 
-![](.images/activity/pause/body-act02.png)
+![](.images/activity/pause/body-act02.png))  
+modelID:{SysRM-act06-02}
 
 **L2要求抽出**
 
@@ -83,7 +86,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は一時停止信号を受信したら直ちに一時停止する
 
-![](.images/activity/pause/act01.png)
+![](.images/activity/pause/act01.png)  
+modelID:{SysRM-act06-03}
 
 
 **L2要求抽出**
@@ -104,7 +108,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は一時停止した後に内部の状態を一時停止状態に設定する
 
-![](.images/activity/pause/act02.png)
+![](.images/activity/pause/act02.png)  
+modelID:{SysRM-act06-04}
 
 
 **L2要求抽出**
@@ -118,7 +123,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は一時停止状態であることを頭部に通知する
 
-![](.images/activity/pause/act03.png)
+![](.images/activity/pause/act03.png)  
+modelID:{SysRM-act06-05}
 
 
 **L2要求抽出**

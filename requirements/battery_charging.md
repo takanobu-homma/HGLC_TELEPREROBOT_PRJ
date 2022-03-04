@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-16:充電する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年2月08日
+date: 2022年3月07日
 ---
 
 <!-- 表紙ページのための改ページ -->
@@ -42,7 +42,8 @@ date: 2022年2月08日
 
 
 
-![](.images/activity/battery_charging.png)
+![](.images/activity/battery_charging.png)  
+modelID:{SysRM-act16}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -51,7 +52,8 @@ date: 2022年2月08日
 
 ## 胴体部は充電中であることを表示する
 
-![](.images/activity/battery_charging/body-act01.png)
+![](.images/activity/battery_charging/body-act01.png)  
+modelID:{SysRM-act16-01}
 
 **L2要求抽出**
 
@@ -63,7 +65,8 @@ date: 2022年2月08日
 
 ## 胴体部は充電完了したことを表示する
 
-![](.images/activity/battery_charging/body-act02.png)
+![](.images/activity/battery_charging/body-act02.png)  
+modelID:{SysRM-act16-02}
 
 **L2要求抽出**
 
@@ -75,7 +78,8 @@ date: 2022年2月08日
 
 ## 胴体部は充電ステーションから切り離されたことを表示する
 
-![](.images/activity/battery_charging/body-act03.png)
+![](.images/activity/battery_charging/body-act03.png)  
+modelID:{SysRM-act16-03}
 
 **L2要求抽出**
 
@@ -87,7 +91,8 @@ date: 2022年2月08日
 
 ## 走行部は充電ステーションに接続する
 
-![](.images/activity/battery_charging/act01.png)
+![](.images/activity/battery_charging/act01.png)  
+modelID:{SysRM-act16-04}
 
 **L2要求抽出**
 
@@ -99,7 +104,8 @@ date: 2022年2月08日
 
 ## 走行部は充電を開始する
 
-![](.images/activity/battery_charging/act02.png)
+![](.images/activity/battery_charging/act02.png)  
+modelID:{SysRM-act16-05}
 
 **L2要求抽出**
 
@@ -112,7 +118,8 @@ date: 2022年2月08日
 
 ## 走行部は充電ステーション接続中に充電を停止する
 
-![](.images/activity/battery_charging/act03.png)
+![](.images/activity/battery_charging/act03.png)  
+modelID:{SysRM-act16-06}
 
 **L2要求抽出**
 
@@ -124,7 +131,8 @@ date: 2022年2月08日
 
 ## 走行部は充電ステーションから切り離す
 
-![](.images/activity/battery_charging/act04.png)
+![](.images/activity/battery_charging/act04.png)  
+modelID:{SysRM-act16-07}
 
 **L2要求抽出**
 
@@ -136,7 +144,8 @@ date: 2022年2月08日
 
 ## 走行部は充電ステーションから切り離されたら充電を停止する
 
-![](.images/activity/battery_charging/act05.png)
+![](.images/activity/battery_charging/act05.png)  
+modelID:{SysRM-act16-08}
 
 **L2要求抽出**
 

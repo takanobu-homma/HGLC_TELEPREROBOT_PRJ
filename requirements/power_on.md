@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-01:起動する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年2月08日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -39,7 +39,8 @@ date: 2022年2月08日
 
 「SysRS-01:起動する」のアクティビティ図を以下に示す。
 
-![](.images/activity/power_on.png)
+![](.images/activity/power_on.png)  
+modelID:{SysRM-act01}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -84,7 +85,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は頭部による自己診断を受ける
 
-![](.images/activity/power_on/body-act01.png)
+![](.images/activity/power_on/body-act01.png)  
+modelID:{SysRM-act01-01}
 
 **L2要求抽出**
 
@@ -97,7 +99,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は起動処理の結果を走行部から受け表示する
 
-![](.images/activity/power_on/body-act02.png)
+![](.images/activity/power_on/body-act02.png)  
+modelID:{SysRM-act01-02}
 
 
 **L2要求抽出**
@@ -112,7 +115,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は胴体部の電源ON操作により起動し、起動処理を開始する
 
-![](.images/activity/power_on/act01.png)
+![](.images/activity/power_on/act01.png)  
+modelID:{SysRM-act01-03}
 
 **L2要求抽出**
 
@@ -133,7 +137,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は頭部に電源を供給する
 
-![](.images/activity/power_on/act02.png)
+![](.images/activity/power_on/act02.png)  
+modelID:{SysRM-act01-04}
 
 
 **L2要求抽出**
@@ -148,7 +153,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は自己診断を行う
 
-![](.images/activity/power_on/act03.png)
+![](.images/activity/power_on/act03.png)  
+modelID:{SysRM-act01-05}
 
 
 **L2要求抽出**
@@ -171,7 +177,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は自己診断が正常に完了した場合、一時停止状態に設定する
 
-![](.images/activity/power_on/act04.png)
+![](.images/activity/power_on/act04.png)  
+modelID:{SysRM-act01-06}
 
 
 **L2要求抽出**
@@ -184,7 +191,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は自己診断で異常があった場合、診断結果を保存する
 
-![](.images/activity/power_on/act05.png)
+![](.images/activity/power_on/act05.png)  
+modelID:{SysRM-act01-07}
 
 
 **L2要求抽出**
@@ -198,7 +206,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は起動処理の結果を頭部に送信する
 
-![](.images/activity/power_on/act06.png)
+![](.images/activity/power_on/act06.png)  
+modelID:{SysRM-act01-08}
 
 
 **L2要求抽出**
@@ -212,7 +221,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は起動処理の結果を胴体部に送信する
 
-![](.images/activity/power_on/act07.png)
+![](.images/activity/power_on/act07.png)  
+modelID:{SysRM-act01-09}
 
 
 **L2要求抽出**

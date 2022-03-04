@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-11b:異常状態から復帰する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年2月25日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -39,7 +39,8 @@ date: 2022年2月25日
 
 「SysRS-11b:異常状態から復帰する」のアクティビティ図を以下に示す。
 
-![](.images/activity/error_recovery.png)
+![](.images/activity/error_recovery.png)  
+modelID:{SysRM-act11b}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -60,7 +61,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部はCautionおよびWarning2状態の時に復帰操作を受け付ける
 
-![](.images/activity/error_recovery/body-act01.png)
+![](.images/activity/error_recovery/body-act01.png)  
+modelID:{SysRM-act11b-01}
 
 **L2要求抽出**
 
@@ -72,7 +74,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部はFault状態の時に電源OFF操作を受け付ける
 
-![](.images/activity/error_recovery/body-act02.png)
+![](.images/activity/error_recovery/body-act02.png)  
+modelID:{SysRM-act11b-02}
 
 **L2要求抽出**
 
@@ -90,7 +93,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は異常状態が解消されたことを表示する
 
-![](.images/activity/error_recovery/body-act03.png)
+![](.images/activity/error_recovery/body-act03.png)  
+modelID:{SysRM-act11b-02}
 
 **L2要求抽出**
 
@@ -103,7 +107,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部はWarning1状態の時に充電ステーションへの接続による復帰操作を受け付ける
 
-![](.images/activity/error_recovery/act01.png)
+![](.images/activity/error_recovery/act01.png)  
+modelID:{SysRM-act11b-03}
 
 
 **L2要求抽出**
@@ -116,7 +121,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は復帰操作によりCautionおよびWarning状態を解消する
 
-![](.images/activity/error_recovery/act02.png)
+![](.images/activity/error_recovery/act02.png)  
+modelID:{SysRM-act11b-04}
 
 
 **L2要求抽出**
@@ -139,7 +145,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は起動時にFault状態を解消する
 
-![](.images/activity/error_recovery/act03.png)
+![](.images/activity/error_recovery/act03.png)  
+modelID:{SysRM-act11b-05}
 
 
 **L2要求抽出**
@@ -154,7 +161,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は異常状態が解消されたことを確認する
 
-![](.images/activity/error_recovery/act04.png)
+![](.images/activity/error_recovery/act04.png)  
+modelID:{SysRM-act11b-06}
 
 
 **L2要求抽出**

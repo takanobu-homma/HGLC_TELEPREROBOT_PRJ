@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-15:シャットダウンする」の要求詳細化
 author: 株式会社 豆蔵
-date: 2022年2月08日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -39,7 +39,8 @@ date: 2022年2月08日
 
 「SysRS-15:シャットダウンする」のアクティビティ図を以下に示す。
 
-![](.images/activity/shutdown.png)
+![](.images/activity/shutdown.png)  
+modelID:{SysRM-act15}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -92,7 +93,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部はシャットダウンしていることを表示する
 
-![](.images/activity/shutdown/body-act01.png)
+![](.images/activity/shutdown/body-act01.png)  
+modelID:{SysRM-act15-01}
 
 **L2要求抽出**
 
@@ -105,7 +107,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は頭部による自己診断を受ける
 
-![](.images/activity/shutdown/body-act02.png)
+![](.images/activity/shutdown/body-act02.png)  
+modelID:{SysRM-act15-02}
 
 **L2要求抽出**
 
@@ -118,7 +121,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は電源OFFにより状態表示をOFFにする
 
-![](.images/activity/shutdown/body-act03.png)
+![](.images/activity/shutdown/body-act03.png)  
+modelID:{SysRM-act15-03}
 
 **L2要求抽出**
 
@@ -130,7 +134,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部はシャットダウン開始を受信する
 
-![](.images/activity/shutdown/act01.png)
+![](.images/activity/shutdown/act01.png)  
+modelID:{SysRM-act15-04}
 
 
 **L2要求抽出**
@@ -144,7 +149,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は頭部へシャットダウン開始を通知する
 
-![](.images/activity/shutdown/act02.png)
+![](.images/activity/shutdown/act02.png)  
+modelID:{SysRM-act15-05}
 
 
 **L2要求抽出**
@@ -157,7 +163,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は頭部への電源をOFFする
 
-![](.images/activity/shutdown/act03.png)
+![](.images/activity/shutdown/act03.png)  
+modelID:{SysRM-act15-06}
 
 
 **L2要求抽出**
@@ -174,7 +181,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は自己診断を行う
 
-![](.images/activity/shutdown/act04.png)
+![](.images/activity/shutdown/act04.png)  
+modelID:{SysRM-act15-07}
 
 
 **L2要求抽出**
@@ -196,7 +204,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は自己診断結果を頭部に送信する
 
-![](.images/activity/shutdown/act04a.png)
+![](.images/activity/shutdown/act04a.png)  
+modelID:{SysRM-act15-08}
 
 
 **L2要求抽出**
@@ -210,7 +219,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は自己診断が正常に完了した場合、運転履歴を保存する
 
-![](.images/activity/shutdown/act05.png)
+![](.images/activity/shutdown/act05.png)  
+modelID:{SysRM-act15-09}
 
 
 **L2要求抽出**
@@ -224,7 +234,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は自己診断で異常があった場合、運転履歴および診断結果を保存する
 
-![](.images/activity/shutdown/act06.png)
+![](.images/activity/shutdown/act06.png)  
+modelID:{SysRM-act15-10}
 
 
 **L2要求抽出**
@@ -236,7 +247,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は走行部を終了する
 
-![](.images/activity/shutdown/act07.png)
+![](.images/activity/shutdown/act07.png)  
+modelID:{SysRM-act15-11}
 
 
 **L2要求抽出**
@@ -248,7 +260,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は走行部の電源をOFFにする
 
-![](.images/activity/shutdown/act08.png)
+![](.images/activity/shutdown/act08.png)  
+modelID:{SysRM-act15-12}
 
 
 **L2要求抽出**
