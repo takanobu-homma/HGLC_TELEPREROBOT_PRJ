@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-07:一時停止を解除する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年1月28日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -39,7 +39,8 @@ date: 2022年1月28日
 
 「SysRS-07:一時停止を解除する」のアクティビティ図を以下に示す。
 
-![](.images/activity/unpause.png)
+![](.images/activity/unpause.png)  
+modelID:{SysRM-act07}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -60,7 +61,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は一時停止中に一時停止解除操作されたら走行部に一時停止解除を伝達する
 
-![](.images/activity/unpause/body-act01.png)
+![](.images/activity/unpause/body-act01.png)  
+modelID:{SysRM-act07-01}
 
 **L2要求抽出**
 
@@ -75,7 +77,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は一時停止状態が解除されたら、正常動作中であることを表示する
 
-![](.images/activity/unpause/body-act02.png)
+![](.images/activity/unpause/body-act02.png)  
+modelID:{SysRM-act07-02}
 
 **L2要求抽出**
 
@@ -89,7 +92,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は一時停止解除を受けたら、直ちに頭部に一時停止解除を通知する
 
-![](.images/activity/unpause/act01.png)
+![](.images/activity/unpause/act01.png)  
+modelID:{SysRM-act07-03}
 
 
 **L2要求抽出**
@@ -105,7 +109,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は一時停止解除解除中に頭部からの走行停止コマンドを受けたら、一時停止を解除を周知し、一定時間待機する
 
-![](.images/activity/unpause/act02.png)
+![](.images/activity/unpause/act02.png)  
+modelID:{SysRM-act07-04}
 
 
 **L2要求抽出**
@@ -123,7 +128,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は一定時間待機後に一時停止状態を解除し、外部指示を有効にする
 
-![](.images/activity/unpause/act03.png)
+![](.images/activity/unpause/act03.png)  
+modelID:{SysRM-act07-05}
 
 
 **L2要求抽出**

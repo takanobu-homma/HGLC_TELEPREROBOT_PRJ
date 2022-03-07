@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: L0/L1要求抽出
 author: 株式会社 豆蔵
-date: 2022年2月28日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -1299,7 +1299,8 @@ date: 2022年2月28日
 
 テレプレゼンスロボット全体の状態遷移図を以下に記載する
 
-![](.images/statemachine/sm-00.png)
+![](.images/statemachine/sm-00.png)  
+modelID:{SysRM-sm00}
 
 上記の状態遷移図より、要求に影響を与える状態遷移を以下に示す
 
@@ -1323,8 +1324,6 @@ date: 2022年2月28日
 ※5:遷移元（テスト）の詳細は「SM-05:テスト」参照  
 
 
-<!-- TODO:状態遷移図は適切な粒度・範囲で分割する -->
-
 <div style="page-break-before:always"></div>
 
 **SM-01:電源OFF**
@@ -1340,9 +1339,8 @@ date: 2022年2月28日
 ※2:異常検知時は「SM-03:異常」の内部状態が制御されている想定  
 ※3:表示（LED等）には異常があれば異常レベルに応じて表示、無ければ「バッテリ」の内部状態「充電中」/「充電完了」が表示される  
 
-
-
-![](.images/statemachine/sm-01.png)
+![](.images/statemachine/sm-01.png)  
+modelID:{SysRM-sm01}
 
 上記の状態遷移図より、要求に影響を与える状態遷移を以下に示す
 
@@ -1372,7 +1370,8 @@ date: 2022年2月28日
 ※2:DC-ON検知時はサブシステム（バッテリ）の状態として「SM-04:バッテリ」の内部状態が制御されている想定
 
 
-![](.images/statemachine/sm-02.png)
+![](.images/statemachine/sm-02.png)  
+modelID:{SysRM-sm02a}
 
 上記の状態遷移図より、要求に影響を与える状態遷移を以下に示す
 
@@ -1416,7 +1415,8 @@ date: 2022年2月28日
 ※2:表示（LED等）には「バッテリ」の内部状態「充電中」/「充電完了」が表示される  
 
 
-![](.images/statemachine/sm-02-1.png)
+![](.images/statemachine/sm-02-1.png)  
+modelID:{SysRM-sm02b}
 
 上記の状態遷移図より、要求に影響を与える状態遷移を以下に示す
 
@@ -1453,7 +1453,8 @@ date: 2022年2月28日
 ※4:充電ステーションへのドッキングにより異常が解消される想定（DC-ONでは発生しない）  
 
 
-![](.images/statemachine/sm-03.png)
+![](.images/statemachine/sm-03.png)  
+modelID:{SysRM-sm03}
 
 上記の状態遷移図より、要求に影響を与える状態遷移を以下に示す
 
@@ -1481,7 +1482,8 @@ date: 2022年2月28日
 |充電中|充電ステーションに接続されバッテリを充電している状態|充電容量100%検知により充電完了に遷移する想定|
 |充電完了|充電ステーションに接続されバッテリを充電していない状態|充電容量不足（閾値は80%（仮））検知により充電中に遷移する想定|
 
-![](.images/statemachine/sm-04.png)
+![](.images/statemachine/sm-04.png)  
+modelID:{SysRM-sm04}
 
 上記の状態遷移図より、要求に影響を与える状態遷移を以下に示す
 
@@ -1506,7 +1508,8 @@ date: 2022年2月28日
 
 
 
-![](.images/statemachine/sm-05.png)
+![](.images/statemachine/sm-05.png)  
+modelID:{SysRM-sm05}
 
 上記の状態遷移図より、要求に影響を与える状態遷移を以下に示す
 
@@ -1529,7 +1532,8 @@ date: 2022年2月28日
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/power_on.png)
+![](.images/activity/power_on.png)  
+modelID:{SysRM-act01}
 
 - 事前条件
     - アバタークラウドへの接続設定が完了していること
@@ -1584,7 +1588,8 @@ date: 2022年2月28日
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/connection_setting.png)
+![](.images/activity/connection_setting.png)  
+modelID:{SysRM-act02}
 
 - 事前条件
     - アバタークラウド側の接続準備が整っていること
@@ -1623,7 +1628,8 @@ date: 2022年2月28日
 首位置初期化コマンドは首水平動作、首垂直動作のコマンドに依存する。  
 YES動作コマンドは首垂直動作に依存し、NO動作コマンドは首水平動作に依存する。
 
-![](.images/conceptual/control_command.png)
+![](.images/conceptual/control_command.png)  
+modelID:{SysRM-con03}
 
 <div style="page-break-before:always"></div>
 
@@ -1631,7 +1637,8 @@ YES動作コマンドは首垂直動作に依存し、NO動作コマンドは首
 
 遠隔で操作が行われた際の、テレプレゼンスロボット内部の処理の流れをアクティビティ図で整理したものを記載する
 
-![](.images/activity/remote_control.png)
+![](.images/activity/remote_control.png)  
+modelID:{SysRM-act03}
 
 - 事前条件
     - テレプレゼンスロボットが起動していること
@@ -1686,7 +1693,8 @@ YES動作コマンドは首垂直動作に依存し、NO動作コマンドは首
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/telecom.png)
+![](.images/activity/telecom.png)  
+modelID:{SysRM-act04}
 
 - 事前条件
     - テレプレゼンスロボットが起動していること
@@ -1716,13 +1724,15 @@ YES動作コマンドは首垂直動作に依存し、NO動作コマンドは首
 
 設定コマンドには頭部に対して設定を行う頭部設定コマンドと、走行部に対して設定を行うベース設定コマンドの2つがある。
 
-![](.images/conceptual/setting_command.png)
+![](.images/conceptual/setting_command.png)  
+modelID:{SysRM-con05}
 
 <div style="page-break-before:always"></div>
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/remote_setting.png)
+![](.images/activity/remote_setting.png)  
+modelID:{SysRM-act05}
 
 - 事前条件
     - アバタークラウドへの接続が完了していること
@@ -1757,7 +1767,8 @@ YES動作コマンドは首垂直動作に依存し、NO動作コマンドは首
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/pause.png)
+![](.images/activity/pause.png)  
+modelID:{SysRM-act06}
 
 - 事前条件
     - アバタークラウドへの接続が完了していること
@@ -1799,7 +1810,8 @@ YES動作コマンドは首垂直動作に依存し、NO動作コマンドは首
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/unpause.png)
+![](.images/activity/unpause.png)  
+modelID:{SysRM-act07}
 
 - 事前条件
     - アバタークラウドへの接続が完了していること
@@ -1837,7 +1849,8 @@ YES動作コマンドは首垂直動作に依存し、NO動作コマンドは首
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/area_detection.png)
+![](.images/activity/area_detection.png)  
+modelID:{SysRM-act08}
 
 - 事前条件
     - アバタークラウドへの接続が完了していること
@@ -1873,7 +1886,8 @@ YES動作コマンドは首垂直動作に依存し、NO動作コマンドは首
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/station_detection.png)
+![](.images/activity/station_detection.png)  
+modelID:{SysRM-act09}
 
 - 事前条件
     - アバタークラウドへの接続が完了していること
@@ -1958,7 +1972,8 @@ SysRS-11と統合のため廃止
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/error_stop.png)
+![](.images/activity/error_stop.png)  
+modelID:{SysRM-act11a}
 
 - 事前条件
     - アバタークラウドへの接続が完了していること
@@ -2006,7 +2021,8 @@ SysRS-11と統合のため廃止
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/error_recovery.png)
+![](.images/activity/error_recovery.png)  
+modelID:{SysRM-act11b}
 
 - 事前条件
     - アバタークラウドへの接続が完了していること
@@ -2081,7 +2097,8 @@ SysRS-11と統合のため廃止
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/display_status.png)
+![](.images/activity/display_status.png)  
+modelID:{SysRM-act12}
 
 - 事前条件
     - テレプレゼンスロボットが起動していること
@@ -2114,7 +2131,8 @@ SysRS-11と統合のため廃止
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/notify_status.png)
+![](.images/activity/notify_status.png)  
+modelID:{SysRM-act13}
 
 - 事前条件
     - テレプレゼンスロボットが起動していること
@@ -2156,7 +2174,8 @@ SysRS-11と統合のため廃止
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/send_data.png)
+![](.images/activity/send_data.png)  
+modelID:{SysRM-act14}
 
 - 事前条件
     - テレプレゼンスロボットが起動していること
@@ -2191,7 +2210,8 @@ SysRS-11と統合のため廃止
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/shutdown.png)
+![](.images/activity/shutdown.png)  
+modelID:{SysRM-act15}
 
 - 事前条件
     - なし
@@ -2248,7 +2268,8 @@ SysRS-11と統合のため廃止
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/battery_charging.png)
+![](.images/activity/battery_charging.png)  
+modelID:{SysRM-act16}
 
 - 事前条件
     - なし
@@ -2287,13 +2308,16 @@ SysRS-11と統合のため廃止
  - 故障履歴
  - ドライブレコーダー
 
-![](.images/conceptual/drive_history.png)
+![](.images/conceptual/drive_history.png)  
+modelID:{SysRM-con19}
 
 <div style="page-break-before:always"></div>
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/read_drive_history.png)
+![](.images/activity/read_drive_history.png)  
+modelID:{SysRM-act19}
+
 
 - 事前条件
     - テストモードで起動済みであること
@@ -2324,7 +2348,8 @@ SysRS-11と統合のため廃止
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/clear_drive_history.png)
+![](.images/activity/clear_drive_history.png)  
+modelID:{SysRM-act20}
 
 - 事前条件
     - テストモードで起動済みであること
@@ -2355,7 +2380,8 @@ SysRS-11と統合のため廃止
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/diagnosis.png)
+![](.images/activity/diagnosis.png)  
+modelID:{SysRM-act21}
 
 - 事前条件
     - テストモードで起動済みであること
@@ -2392,7 +2418,8 @@ SysRS-11と統合のため廃止
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/software_update.png)
+![](.images/activity/software_update.png)  
+modelID:{SysRM-act22}
 
 - 事前条件
     - リプロモードで起動済みであること
@@ -2429,7 +2456,8 @@ SysRS-11と統合のため廃止
 
 **テレプレゼンスロボット内部の処理**
 
-![](.images/activity/hand_move.png)
+![](.images/activity/hand_move.png)  
+modelID:{SysRM-act24}
 
 - 事前条件
     - 電源がOFF状態になっていること
@@ -2455,7 +2483,8 @@ SysRS-11と統合のため廃止
 
 hogehogefugafuga
 
-![](.images/conceptual/xxx.png)
+![](.images/conceptual/xxx.png)  
+modelID:{SysRM-actxx}
 
 
 **テレプレゼンスロボット内部の処理**

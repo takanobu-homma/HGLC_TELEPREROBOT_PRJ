@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-04:遠隔で会話する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2021年11月22日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -39,9 +39,8 @@ date: 2021年11月22日
 
 「SysRS-04:遠隔で会話する」のアクティビティ図を以下に示す。
 
-
-
-![](.images/activity/telecom.png)
+![](.images/activity/telecom.png)  
+modelID:{SysRM-act04}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。

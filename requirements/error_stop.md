@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-11a:異常を検知し停止する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年2月08日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -41,7 +41,8 @@ date: 2022年2月08日
 
 
 
-![](.images/activity/error_stop.png)
+![](.images/activity/error_stop.png)  
+modelID:{SysRM-act11a}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -80,7 +81,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は胴体内の異常を検知し、頭部に通知する
 
-![](.images/activity/error_stop/body-act01.png)
+![](.images/activity/error_stop/body-act01.png)  
+modelID:{SysRM-act11a-01}
 
 **L2要求抽出**
 
@@ -93,7 +95,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は胴体内の異常を検知したら保護機能を作動する
 
-![](.images/activity/error_stop/body-act02.png)
+![](.images/activity/error_stop/body-act02.png)  
+modelID:{SysRM-act11a-02}
 
 **L2要求抽出**
 
@@ -105,7 +108,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は本体の異常を本体に表示する
 
-![](.images/activity/error_stop/body-act03.png)
+![](.images/activity/error_stop/body-act03.png)  
+modelID:{SysRM-act11a-03}
 
 **L2要求抽出**
 
@@ -117,7 +121,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は頭部からの指示を受けて首振り動作を停止する
 
-![](.images/activity/error_stop/body-act04.png)
+![](.images/activity/error_stop/body-act04.png)  
+modelID:{SysRM-act11a-04}
 
 **L2要求抽出**
 
@@ -131,7 +136,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は走行部内の異常を検知する
 
-![](.images/activity/error_stop/act01.png)
+![](.images/activity/error_stop/act01.png)  
+modelID:{SysRM-act11a-05}
 
 
 **L2要求抽出**
@@ -153,7 +159,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は走行部内の異常を頭部に通知する
 
-![](.images/activity/error_stop/act02.png)
+![](.images/activity/error_stop/act02.png)  
+modelID:{SysRM-act11a-06}
 
 
 **L2要求抽出**
@@ -167,7 +174,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は走行部異常検知か頭部異常検知を胴体部に通知する
 
-![](.images/activity/error_stop/act03.png)
+![](.images/activity/error_stop/act03.png)  
+modelID:{SysRM-act11a-07}
 
 
 **L2要求抽出**
@@ -181,7 +189,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は走行・旋回動作を停止する
 
-![](.images/activity/error_stop/act04.png)
+![](.images/activity/error_stop/act04.png)  
+modelID:{SysRM-act11a-08}
 
 
 **L2要求抽出**
@@ -192,7 +201,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は異常発生時の運転履歴を記録する
 
-![](.images/activity/error_stop/act05.png)
+![](.images/activity/error_stop/act05.png)  
+modelID:{SysRM-act11a-09}
 
 
 **L2要求抽出**

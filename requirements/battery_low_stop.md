@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-10:バッテリ残量低下を検知し停止する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2021年12月01日
+date: 2022年3月07日
 ---
 <!-- ↑表紙ページのための情報 -->
 
@@ -41,7 +41,8 @@ date: 2021年12月01日
 
 
 
-![](.images/activity/battery_low_stop.png)
+![](.images/activity/battery_low_stop.png)  
+modelID:{SysRM-act10}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -87,7 +88,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部はバッテリ残量の低下を本体に表示する
 
-![](.images/activity/battery_low_stop/body-act01.png)
+![](.images/activity/battery_low_stop/body-act01.png)  
+modelID:{SysRM-act10-01}
 
 **L2要求抽出**
 
@@ -99,7 +101,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 胴体部は頭部からの指示を受けて首振り動作を停止する
 
-![](.images/activity/battery_low_stop/body-act02.png)
+![](.images/activity/battery_low_stop/body-act02.png)  
+modelID:{SysRM-act10-02}
 
 **L2要求抽出**
 
@@ -113,7 +116,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部はバッテリ残量を確認する
 
-![](.images/activity/battery_low_stop/act01.png)
+![](.images/activity/battery_low_stop/act01.png)  
+modelID:{SysRM-act10-03}
 
 
 **L2要求抽出**
@@ -129,7 +133,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部はバッテリ残量を頭部に送信する
 
-![](.images/activity/battery_low_stop/act02.png)
+![](.images/activity/battery_low_stop/act02.png)  
+modelID:{SysRM-act10-04}
 
 
 **L2要求抽出**
@@ -143,7 +148,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部はバッテリ残量が低下した場合、頭部にバッテリ残量の低下を通知する
 
-![](.images/activity/battery_low_stop/act03.png)
+![](.images/activity/battery_low_stop/act03.png)  
+modelID:{SysRM-act10-05}
 
 
 **L2要求抽出**
@@ -157,7 +163,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は頭部からの指示を受けて走行・旋回動作を停止する
 
-![](.images/activity/battery_low_stop/act04.png)
+![](.images/activity/battery_low_stop/act04.png)  
+modelID:{SysRM-act10-06}
 
 
 **L2要求抽出**

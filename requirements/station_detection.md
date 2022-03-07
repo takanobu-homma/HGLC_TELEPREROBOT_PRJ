@@ -2,7 +2,7 @@
 title: テレプレゼンスロボット要求分析
 subtitle: 「SysRS-09:充電ステーションを検出する」のL2要求抽出
 author: 株式会社 豆蔵
-date: 2022年1月31日
+date: 2022年3月07日
 ---
 
 <!-- 表紙ページのための改ページ -->
@@ -40,7 +40,8 @@ date: 2022年1月31日
 
 「SysRS-09:充電ステーションを検出する」のアクティビティ図を以下に示す。
 
-![](.images/activity/station_detection.png)
+![](.images/activity/station_detection.png)  
+modelID:{SysRM-act09}
 
 上記L0のアクティビティ図のアクション/デシジョン等から導出された胴体部・走行部のL1要求に対するL2要求分析を行う。  
 ※頭部に対してはavatarin側の責務のため、本書では対象外とする。
@@ -91,7 +92,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部はステーションワイヤとの間に生じるステーション信号からステーション検出を行いステーション検出値を送信する
 
-![](.images/activity/station_detection/act01.png)
+![](.images/activity/station_detection/act01.png)  
+modelID:{SysRM-act09-01}
 
 **L2要求抽出**
 
@@ -104,7 +106,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は頭部からの走行コマンドの速度制限指示にしたがい走行速度を落とす
 
-![](.images/activity/station_detection/act02.png)
+![](.images/activity/station_detection/act02.png)  
+modelID:{SysRM-act09-02}
 
 **L2要求抽出**
 
@@ -118,7 +121,8 @@ avatarin側の責務のため、対象外とする。
 
 ## 走行部は頭部からの走行コマンドの速度0指示にしたがい走行を停止する
 
-![](.images/activity/station_detection/act03.png)
+![](.images/activity/station_detection/act03.png)  
+modelID:{SysRM-act09-03}
 
 **L2要求抽出**
 
