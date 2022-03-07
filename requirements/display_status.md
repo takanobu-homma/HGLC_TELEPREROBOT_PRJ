@@ -115,7 +115,7 @@ modelID:{SysRM-act12-03}
 ## 走行部は各部から状態の変化を受信し表示する状態を決定する
 
 ![](.images/activity/display_status/act02.png)  
-modelID:{SysRM-act12-03}
+modelID:{SysRM-act12-04}
 
 
 **L2要求抽出**

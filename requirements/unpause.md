@@ -129,7 +129,7 @@ modelID:{SysRM-act07-04}
 ## 走行部は一定時間待機後に一時停止状態を解除し、外部指示を有効にする
 
 ![](.images/activity/unpause/act03.png)  
-modelID:{SysRM-act07-05git }
+modelID:{SysRM-act07-05}
 
 
 **L2要求抽出**

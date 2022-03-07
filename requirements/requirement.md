@@ -2269,7 +2269,7 @@ modelID:{SysRM-act15}
 **テレプレゼンスロボット内部の処理**
 
 ![](.images/activity/battery_charging.png)  
-modelID:{SysRM-act016}
+modelID:{SysRM-act16}
 
 - 事前条件
     - なし

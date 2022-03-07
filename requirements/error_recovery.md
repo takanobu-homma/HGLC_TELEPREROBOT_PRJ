@@ -94,7 +94,7 @@ modelID:{SysRM-act11b-02}
 ## 胴体部は異常状態が解消されたことを表示する
 
 ![](.images/activity/error_recovery/body-act03.png)  
-modelID:{SysRM-act11b-02}
+modelID:{SysRM-act11b-03}
 
 **L2要求抽出**
 
@@ -108,7 +108,7 @@ modelID:{SysRM-act11b-02}
 ## 走行部はWarning1状態の時に充電ステーションへの接続による復帰操作を受け付ける
 
 ![](.images/activity/error_recovery/act01.png)  
-modelID:{SysRM-act11b-03}
+modelID:{SysRM-act11b-04}
 
 
 **L2要求抽出**
@@ -122,7 +122,7 @@ modelID:{SysRM-act11b-03}
 ## 走行部は復帰操作によりCautionおよびWarning状態を解消する
 
 ![](.images/activity/error_recovery/act02.png)  
-modelID:{SysRM-act11b-04}
+modelID:{SysRM-act11b-05}
 
 
 **L2要求抽出**
@@ -146,7 +146,7 @@ modelID:{SysRM-act11b-04}
 ## 走行部は起動時にFault状態を解消する
 
 ![](.images/activity/error_recovery/act03.png)  
-modelID:{SysRM-act11b-05}
+modelID:{SysRM-act11b-06}
 
 
 **L2要求抽出**
@@ -162,7 +162,7 @@ modelID:{SysRM-act11b-05}
 ## 走行部は異常状態が解消されたことを確認する
 
 ![](.images/activity/error_recovery/act04.png)  
-modelID:{SysRM-act11b-06}
+modelID:{SysRM-act11b-07}
 
 
 **L2要求抽出**
